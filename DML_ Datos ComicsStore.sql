@@ -1,4 +1,7 @@
 -- Tabla de Clientes
+
+use ADBS191;
+
 CREATE TABLE Clientes (
     id_clientes INT PRIMARY KEY IDENTITY(1,1),
     nombre NVARCHAR(100) NOT NULL,
@@ -101,7 +104,7 @@ INSERT INTO Compras (id_cliente, fecha_compra, total) VALUES
 (6, '2024-05-25', 24.98),
 (7, '2024-05-26', 19.99);
 
-INSERT INTO Comic_Compras (cantidad, id_compra, id_comic) VALUES
+INSERT INTO Comic_compras (cantidad, id_compra, id_comic) VALUES
 (1, 1, 1), (2, 1, 2), 
 (1, 2, 3), 
 (1, 3, 4), 
@@ -110,12 +113,3 @@ INSERT INTO Comic_Compras (cantidad, id_compra, id_comic) VALUES
 (1, 6, 7), (1, 6, 8), 
 (1, 7, 14);
 
-INSERT INTO Compras (id_cliente, fecha_compra, total) VALUES
-(1, '2024-05-27', 15.98),
-(2, '2024-05-27', 24.98),
-(1, '2024-05-27', 19.99);
-
-INSERT INTO Comic_Compras (cantidad, id_compra, id_comic) VALUES
-(1, 8, 9), (1, 8, 11), 
-(1, 9, 12), (1, 9, 13),
-(1, 10, 15);
