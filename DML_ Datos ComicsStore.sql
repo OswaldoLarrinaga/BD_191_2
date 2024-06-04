@@ -8,6 +8,7 @@ CREATE TABLE Clientes (
     correo_electronico NVARCHAR(100) NOT NULL UNIQUE,
     pass NVARCHAR(256) NOT NULL
 );
+SELECT * FROM Comics;
 
 -- Tabla de Compras
 CREATE TABLE Compras (
